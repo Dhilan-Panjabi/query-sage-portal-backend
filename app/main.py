@@ -16,7 +16,7 @@ app = FastAPI(title="Browser Agent API")
 # Configure CORS to allow frontend connections
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://the-ai-vantage.com", "https://aivantage.app", "http://localhost:3000"],  # Replace with your frontend URL in production
+    allow_origins=["https://aivantage.app"],  # Replace with your frontend URL in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
